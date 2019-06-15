@@ -1,4 +1,4 @@
-# What are the different type in JavaScript?
+## What are the different type in JavaScript?
 
 ECMAScript 5, the specification defines six different types in JavaScript. We have **five primitives types** and **one non-primitive type**.
 
@@ -24,13 +24,15 @@ And our non-primitive type:
 So, those are the types that we have in JavaScript.
 
 
-# There is a function in JavaScript called `typeof` to be able to print out the type of a value.
+## Print out the type of a value.
+
+There is a function in JavaScript called `typeof` to be able to print out the type of a value.
 
 | Values | Types |
 | ------ | ------ |
 | `typeof(2)` | `number` |
 | `typeof('b')` | `string`  |
-| `typeof(trus)` | `boolean` |
+| `typeof(true)` | `boolean` |
 | `typeof(undefined)` | `undefined` |
 | `typeof(null)` | `object` which incorrectly, is actually the typeof object. The `typeof` null is actually null. This a problem in JavaScript, the change can't really be reversed now without causing a number of problems. | 
 | `typeof({})` | `object` |
@@ -39,9 +41,10 @@ So, those are the different types we have available to use in JavaScript.
 
 
 
-# Difference between undefined and null
+## Difference between undefined and null
 
-Tow types that represent the concept of no value;
+Tow types that represent the concept of no value:
+
 `undefined` it's used by the JavaScript engine to inform developers that this is either an uninitialized variable, it's either a parameter that's missing from the function parameters list or it's perhaps an unknown property of an object.
 
 `null` is usually used by programmers to indicate no value. JavaScript engine will never set a value to null for developers it will always set it to undefined if it does not know what it is.
