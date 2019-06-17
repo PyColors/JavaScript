@@ -13,7 +13,7 @@ We are using `"use strict"` it means `g` variable in the `console.log()` has to 
 Most the people would actually expect this code to fail because the variable `g` is been using before it's actually declared and it is declared on the line below.
 But if we run through this code no error being print out in the console there's just the `undefined` string is getting printed out from the `console.log(g)` line.
 
-### What is JavaScript doing?
+## What is JavaScript doing?
 
 Variable hoisting could be actually a bit confusing, but to understand why `undefined` getting printed out, we have got to understand what JavaScript is doing.
 
@@ -38,7 +38,7 @@ When we do `console.log(g)` the variable `g` has already been declared and also 
 
 That's what variable hoisting is in JavaScript it's automatic hoisting of the variable declaration to the top its enclosing scope because that code above is in the global scope.
 
-### Inside a function 
+## Inside a function 
 If we are inside a function for instance, with the code below, we still have the same behavior.
 
 ```
@@ -135,5 +135,5 @@ foo = function() {
  That's why we are throwing in error: `Uncaught TypeError: foo is not a function`.
  
  
- ### Conclusion
+ ## Conclusion
  It's **important** to know and **understand hoisting** in general in JavaScript, function and variable are hoisted to the top of the page, but if we have a variable that's equal to an anonymous function we may be caught out with some of these issues like the example above.
