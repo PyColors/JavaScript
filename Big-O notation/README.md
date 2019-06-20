@@ -1,7 +1,8 @@
-#What is Big-O Notation
+# What is Big-O Notation
 
 Big-O is a notation used to classify how scalable an algorithm of function is.
 And it allows us to estimate the worst case a runtime of an algorithm, or how long it takes the algorithm to complete based on the input size.
+
 
 So, what this means is that Big O informs us of how much slower an algorithm will run if it's input size grows. If the input size gets a larger say on an array of 2000 elements instead of an array of 60 elements.
 - Will the runtime of the function stay the same. 
@@ -10,7 +11,7 @@ So, what this means is that Big O informs us of how much slower an algorithm wil
 
 This is what Big-O notation tells us, and it describes how performance a function or an algorithm is.
   
-## Constant runtime - Big O Notation: "0 (1)"
+## Constant runtime - Big-O Notation: "0 (1)"
 
 If we have a function called log that simply takes in an array and it logs out the first two elements in the array what it's Big O notation or runtime going to be?
 
@@ -30,7 +31,7 @@ log([1, 2, 3, 4,]);
 log([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 ```
 
-## Linear runtime - Big O Notation: "0 (n)"
+## Linear runtime - Big-O Notation: "0 (n)"
 Now we have a function called the `logTotal` witch takes in an array and that logs out every element in that array.
 What is the runtime of this function?
 We know that we have to do an operation on every single element in the array now. So, as the input size increases our runtime, will also increase. For this function our runtime will increase proportionally, to how much our input increases and that makes sense.
@@ -56,7 +57,7 @@ logTotal([1, 2, 3, 4, 5, 6, 7]);
 Let's run through two more run times or time complexity as there are very often seen throughout engineering and programming.
 
 
-## Exponential runtime - Big O Notation: "0 (n^2)"
+## Exponential runtime - Big-O Notation: "0 (n^2)"
 The next runtime that we will explore is exponential runtime.
 
 ```
@@ -122,4 +123,6 @@ And our other input (key) is simply just a single value that we want to try and 
 
 Binary search has a logarithmic runtime because with every operation that we perform we are cutting the input in half. This is great because even if we have a **huge input** we are only going to be **looking at a fraction of the elements** to find the one that we are **searching for**.
 
-Binary search is an example of a logarithmic runtime or time complexity, witch is written as all of a log and in Big-O notation and you can see it depicted on our graph
+Binary search is an example of a logarithmic runtime or time complexity, witch is written as all of a log and in Big-O notation and you can see it depicted on our graph.
+
+![](http://www.pycolors.com/v2/git/Big-0/Big-O-Notation.png)
