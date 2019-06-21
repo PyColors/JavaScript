@@ -1,4 +1,4 @@
-## What are the different type in JavaScript?
+# What are the different type in JavaScript?
 
 ECMAScript 5, the specification defines six different types in JavaScript. We have **five primitives types** and **one non-primitive type**.
 
@@ -12,7 +12,6 @@ In terms of the primitive type we have:
 | String | Both double quotes or single quotes: `"b"` or `'b'` |
 | Null | It could be the type: `null` |
 | Undefined | It could be the type: `undefined` |
-
 
 
 And our non-primitive type:
@@ -40,7 +39,6 @@ There is a function in JavaScript called `typeof` to be able to print out the ty
 So, those are the different types we have available to use in JavaScript.
 
 
-
 ## Difference between undefined and null
 
 Tow types that represent the concept of no value:
@@ -52,5 +50,3 @@ Tow types that represent the concept of no value:
 - Uninitialized variables.
 - Missing parameters to functions.
 - Unknown variables and unknown properties related the window object
-
-
