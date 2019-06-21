@@ -4,7 +4,7 @@ The scope chain is defined by the way the **program is written in the file**.
 So the best way to explain this is with a couple of examples.
 
 ## The scope chain is defined
-```
+```javascript
 "use strict"
 
 function foo() {
@@ -29,7 +29,7 @@ So, `myvar` variable isn’t available to the `bar()` function because literary 
 Another wat to explain this with that code below by putting the `foo()` function inside the `bar()` function:
 
 
-```
+```javascript
 "use strict"
 
 function bar() {
@@ -51,7 +51,7 @@ Obviously, it's not going to find the `myvar` function, so it's going to look in
 
 What will happening if we move `var myvar = 8;` outside the `bar()` function in the Global scope?
 
-```
+```javascript
 "use strict"
 
 var myvar = 8;
