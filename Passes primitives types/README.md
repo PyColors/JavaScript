@@ -5,7 +5,7 @@
 What this means is that if we change the value of a **primitive type inside a function**, the changes **won't affect the variable in the outer scope**.
 For example:
 
-```
+```javascript
 "use strict"
 
 var c;
@@ -19,7 +19,7 @@ The `var c` in this code above is the **outer scope** and inside the function is
 
 Now, let's add `var c = 10`, *`10` is a primitive type* and call the `c function`:
 
-```
+```javascript
 "use strict"
 
 var c = 10;
@@ -35,7 +35,7 @@ console.log(c)
 
 But if within the `foo()` function we change `c` to `14` by adding `c = 14` and print out this.
 
-```
+```javascript
 "use strict";
 
 var c = 10;
@@ -50,7 +50,7 @@ It's still printing out `10`, that's because for **primitive types** when they a
 Pass by value means is that really is **passing a copy** of `var c`, so anything we do to `c` **inside the body of the function won't affect `var c`**, because we passed a **copy of the initial value** of `var c`: 10.
 That even is valid if we have **another primitive** type like boolean:
 
-```
+```javascript
 "use strict";
 
 var c = true;
@@ -71,7 +71,7 @@ When we are passing something by reference we're passing something that point to
 
 So, since with **JavaScript** passing in an object **passes it by reference**, when we **change a property of that object** from within the function, **the change will be reflected in the outer scopes**. Let's have an example with the previous code and some changes.
 
-```
+```javascript
 "use strict";
 
 var c = {};
@@ -89,7 +89,7 @@ That's why we are printing out the `c` object with the **changes** from the `foo
 
 
 However, let's **change a little bit the code** by `c` to `{'bar': 'foobar'}` and then within the function instead of changing a property of `c` let's adding **exactly what `c` pointed** by: `{'bar': 'foo'}`.
-```
+```javascript
 "use strict";
 
     var c = {'bar': 'foobar'};

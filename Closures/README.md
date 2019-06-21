@@ -5,7 +5,7 @@ Closures can seems pretty complex.
 ## 1. Basic
 
 This function below return a function which then prints out a name. `sayHello` function actually returns a function and inside that function, `text` will print out.
-```
+```javascript
 "use strict";
 
 function sayHello(name) {
@@ -33,7 +33,7 @@ Since the return function been returned by another function it's going to be a c
 
 ### Closure points to the common value
 
-```
+```javascript
 "use strict";
 
 var foo = [];
@@ -46,7 +46,7 @@ console.log(foo[1]());
 console.log(foo[2]());
 ```
 We may expect the output of this code above could be `0, 1, 2` but it's actually: 
-```
+```javascript
 10 
 10
 10
@@ -62,7 +62,7 @@ Closure just points to the common value of whatever variables are used in its fu
 ## 2. Implement the correct behavior
 
 To actually be able to return this output below, we can join forces with an IIFE, and use them both together to solve this problem.
-```
+```javascript
 0
 1
 2
@@ -70,7 +70,7 @@ To actually be able to return this output below, we can join forces with an IIFE
 
 Add an IIFE: *Immediately Invoked Function Expressions*:
 
-```
+```javascript
 "use strict";
 
 var foo = [];
@@ -87,7 +87,6 @@ for (var i = 0; i < 10; i++) {
 console.log(foo[0]());
 console.log(foo[1]());
 console.log(foo[2]()); 
-   
 ```
 
 Now, for each loop through we are going to execute this immediately invoked function. A function has its own internal scope so when the new IIFE function gets called, a new variable called `y` has been created, we assign that variable to whatever the value of `i` was at that moment.
@@ -102,7 +101,7 @@ We can see this like snapshoting whatever values we needs for that closure at th
 
 There is another way to solving this problem and have the same output as well.
 
-```
+```javascript
 "use strict";
 
 var foo = [];
@@ -118,7 +117,6 @@ for (var i = 0; i < 10; i++) {
 console.log(foo[0]());
 console.log(foo[1]());
 console.log(foo[2]()); 
-   
 ```
 
 Primitive types in JavaScript are passed by value not by reference. 

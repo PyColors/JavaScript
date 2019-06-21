@@ -2,7 +2,7 @@
 
 To describe variable hoisting the best way is with examples:
 
-```
+```javascript
 "use strict"
 
 console.log(g);
@@ -23,7 +23,7 @@ The first part is the declaration of `var g` and it will stick that as high as i
 
 * *Note*: if it’s on the file scope, it will put it on top of the page or, it in the function's scope it will try to put at the top of the function.
 
-```
+```javascript
 "use strict"
 
 var g;
@@ -41,7 +41,7 @@ That's what variable hoisting is in JavaScript it's automatic hoisting of the va
 ## Inside a function 
 If we are inside a function for instance, with the code below, we still have the same behavior.
 
-```
+```javascript
 "use strict"
 
 function foo() {
@@ -50,7 +50,6 @@ function foo() {
 }
 
 foo();
-
 ```
 
 This function going to print out `undefined` because inside a function it still performs the hoisting and only pushes the variable declaration to the top of the function scope, the top of the actual function self. **It won't push it to global scope**.
@@ -60,7 +59,7 @@ This function going to print out `undefined` because inside a function it still 
 
 Another example below:
 
-```
+```javascript
 "use strict"
 
 foo();
@@ -78,7 +77,7 @@ JavaScript is able to call the function `foo()` before it's even seen the functi
 
 So, when JavaScript sees this code it will take any function declaration and move it up to the highest part of the scope that it can find like below: 
 
-```
+```javascript
 "use strict"
 
 function foo() {
@@ -87,7 +86,6 @@ function foo() {
 }
 
 foo();
-
 ```
 
 That is how JavaScript hoists functions.
@@ -97,7 +95,7 @@ That is how JavaScript hoists functions.
 
 Instead of just declaring a function like `foo()` we declare a variable `foo` equal to an anonymous function:
 
-```
+```javascript
 "use strict"
 
 foo();
@@ -106,7 +104,6 @@ var foo = function() {
     console.log(g);
     var g = 10;
 };
-
 ```
 
 JavaScript is returning `Uncaught TypeError: foo is not a function`. We might be a bit confused because with the hoisting `var foo...` should be moved to the top of the script and then we would get `undefined` printed as before but that's not the case here.
@@ -115,7 +112,7 @@ So, what's happening here?
 JavaScript perform variable hoisting like below:
  
  
-```
+```javascript
 "use strict"
 
 var foo;
@@ -127,7 +124,6 @@ foo = function() {
     console.log(g);
     var g = 10;
 };
-
 ```
 
  JavaScript just putting `var` at the top of the scope, variable declaration at the top and then it assigning the anonymous function to the variable `foo()`.
