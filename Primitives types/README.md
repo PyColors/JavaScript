@@ -52,5 +52,3 @@ Tow types that represent the concept of no value:
 - Uninitialized variables.
 - Missing parameters to functions.
 - Unknown variables and unknown properties related the window object
-
-
