@@ -18,7 +18,7 @@ If we have a function called log that simply takes in an array and it logs out t
 The runtime of this function is going to be constant, as 0 of 1 in Big-O notation. We know that the runtime is constant because as the input size increases or in this case, as we increase the size of the array the number of operations that we perform never changes. We still only log out the first two elements no matter how large the array gets. This is called Constant runtime and is written as 0 of 1 in Big-O notation.
 We can see this visualized on the graph and as the input size increases the X access, the time that it takes to run the function never changes which is on the y axis.
 
-```
+```javascript
 // Constant runtime
 // Big O Notation: "0 (1)"
 
@@ -40,7 +40,7 @@ If our array has five elements we wil have to perform five operations or log it 
 
 This is called linear runtime, because the runtime is proportional to the input and, we write it as 0 of an in Big-O notation. Where O stands for the function we are evaluating and end stands for the size of the input.
 
-```
+```javascript
 // Linear runtime
 // Big O Notation: "0 (n)"
 function logTotal(array) {
@@ -60,7 +60,7 @@ Let's run through two more run times or time complexity as there are very often 
 ## Exponential runtime - Big-O Notation: "0 (n^2)"
 The next runtime that we will explore is exponential runtime.
 
-```
+```javascript
 // Exponential runtime
 // Big O Notation: "0 (n^2)"
 function addAndPrint(array) {
@@ -91,7 +91,7 @@ So, we try to stay away from creating functions that have this runtime as much a
 Now the final runtime that we will explore is logarithmic runtime and it is very performance.
 An example of a logarithmic algorithm is **binary search** and we can see the code for this below:
 
-```
+```javascript
 // Logarithmic runtime
 // Big O Notation: "0 (log n)"
 function binarysearch(array, key) {
