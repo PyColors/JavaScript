@@ -1,6 +1,9 @@
 # What are Data Structures?
 
-## Understanding exactly what data structures are and why they are important.
+### Most fundamental data structures
+- [Set](https://github.com/PyColors/JavaScript/tree/master/Data%20structures/Sets) 
+
+## Why data structures are important.
 
 Data Structure are very **simply a way** of **organizing the data** that is **stored in a computer** or **in a database**.
 
