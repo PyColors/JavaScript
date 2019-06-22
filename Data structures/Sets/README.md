@@ -31,7 +31,8 @@ mySet.add(1); // mySet: Set {1};
 mySet.add(2); // mySet: Set {1, 2};
 ```
 Notice that adding the duplicate element does not work for a set. As mentioned, insertion into a set occurs in constant time.
-Time complexity: O(1).
+
+Time Complexity: **_O(1)_**.
 
 ### Deletion
 
@@ -44,6 +45,7 @@ mySet.add(2); // mySet: Set {2};
 ```
 
 This is useful for being able to delete items in constant time in contrast to arrays where it would take **_O(n)_** time to delete an item.
+
 Time Complexity: **_O(1)_**
 
 ### Contains
