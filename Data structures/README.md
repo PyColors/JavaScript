@@ -10,7 +10,7 @@ Data Structure are very **simply a way** of **organizing the data** that is **st
 There are **multiple different types** of data structures and each type of data structure represents a different **way** of organizing the data that is **stored**. 
 
 
-## Why are there different types of daa structures?
+## Why are there different types of data structures?
 
 **Each** data structures has its own **strengths** and its own **weaknesses**.
 
